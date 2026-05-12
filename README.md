@@ -1,4 +1,12 @@
-# <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35"> Hola, soy Miguel
+<div align="center">
+
+<!-- Banner Animado con Efecto de Onda -->
+![Banner](https://capsule-render.vercel.app/api?type=waving&color=00d2ff&height=200&section=header&text=Hola,%20soy%20Mikee0102&fontSize=70&animation=fadeIn)
+
+<!-- Efecto de Escritura (Typing SVG) -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00d2ff&center=true&vCenter=true&width=500&lines=Software+Development+Student;Certified+Scrum+Master;Full+Stack+Developer;Svelte+%26+React+Enthusiast" alt="Typing SVG" />
+
+---
 
 <div align="center">
 
@@ -134,13 +142,26 @@ Aplicación web desarrollada con Flask y Python.
 ---
 
 
-# 📊 Estadísticas de GitHub
+### 📊 Actividad y Estadísticas
 
 <div align="center">
 
-![Miguel's GitHub stats](https://github-readme-stats.vercel.app/api?username=Mikee0102&show_icons=true&theme=radical)
+<!-- Gráfico de actividad de los últimos 31 días -->
+![Gráfico de Actividad](https://github-readme-activity-graph.vercel.app/graph?username=Mikee0102&theme=react-dark&hide_border=true)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Mikee0102&layout=compact&theme=radical)
+<br />
+
+<!-- Estadísticas Generales -->
+<!-- Estadísticas Generales (Link Alternativo) -->
+![Estadísticas de Mikee0102](https://github-readme-stats.vercel.app/api?username=Mikee0102&show_icons=true&theme=radical&hide_border=true&count_private=true&cache_seconds=1800)
+
+<!-- Lenguajes más usados (Link Alternativo) -->
+![Lenguajes](https://github-readme-stats.vercel.app/api/top-langs/?username=Mikee0102&layout=compact&theme=radical&hide_border=true&cache_seconds=1800)
+
+<br />
+
+<!-- Trofeos de Logros -->
+[![GitHub Trophy](https://github-profile-trophy.vercel.app/?username=Mikee0102&theme=radical&no-bg=true&margin-w=15)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
@@ -156,6 +177,12 @@ Aplicación web desarrollada con Flask y Python.
 - ☁️ Me interesa la arquitectura de aplicaciones modernas y cloud computing.
 
 ---
+
+<div align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueXZueXJueXZueXJueXZueXJueXZueXJueXZueXJueXBudCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/L1f3uDxS7WpG3uU6pE/giphy.gif" width="100px">
+  <br />
+  <sub>Construido con código y café por <b>Mikee0102</b></sub>
+</div>
 
 <div align="center">
 
