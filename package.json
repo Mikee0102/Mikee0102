@@ -1,0 +1,10 @@
+{
+  "name": "gitprofile-studio",
+  "version": "1.0.0",
+  "description": "Dynamic SVG Banner Generator for GitHub Profile",
+  "main": "scripts/build.js",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js"
+  }
+}

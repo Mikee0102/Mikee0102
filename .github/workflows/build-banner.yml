@@ -1,0 +1,36 @@
+name: Generate SVG Banners
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    # Corre automáticamente cada 24 horas
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-config-version: '20'
+
+      - name: Install & Build Banners
+        run: |
+          npm ci || npm install
+          npm run build
+
+      - name: Commit & Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(banner): auto-generate SVG banners 🐱✨"
+          file_pattern: "output/*.svg assets/banner/*.svg"
