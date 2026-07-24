@@ -26,11 +26,11 @@ const build = () => {
 
     // Creamos el documento SVG con el Easter Egg de Byte
     const svgContent = createSvgDocument({
-      width: 850,
-      height: 340,
-      content,
-      cssStyles,
-      easterEgg: profile.easterEgg
+          width: 1180,
+          height: 610,
+          content,
+          cssStyles,
+          easterEgg: profile.easterEgg
     });
 
     // Guardamos las salidas

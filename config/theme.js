@@ -1,28 +1,26 @@
 export const themes = {
   dark: {
-    background: "#0d1117",
-    cardBg: "rgba(22, 27, 34, 0.75)",
-    borderColor: "rgba(48, 54, 61, 0.8)",
-    textPrimary: "#f0f6fc",
-    textSecondary: "#8b949e",
-    accent: "#58a6ff",
-    accentGlow: "rgba(88, 166, 255, 0.15)",
-    terminalBg: "#161b22",
-    codeGreen: "#7ee787",
-    catBody: "#21262d",
-    catDetail: "#8b949e"
+    background: "#030712",
+    panelBg: "#0F172A",
+    borderColor: "rgba(255, 255, 255, 0.08)",
+    textPrimary: "#F8FAFC",
+    textMuted: "#94A3B8",
+    gradStart: "#7C3AED", // Violeta
+    gradMid: "#22D3EE",   // Cyan
+    gradEnd: "#10B981",   // Esmeralda
+    glowColor: "rgba(34, 211, 238, 0.15)",
+    asciiGradientId: "darkAsciiGrad"
   },
   light: {
-    background: "#f6f8fa",
-    cardBg: "rgba(255, 255, 255, 0.85)",
-    borderColor: "rgba(208, 215, 222, 0.8)",
-    textPrimary: "#24292f",
-    textSecondary: "#57606a",
-    accent: "#0969da",
-    accentGlow: "rgba(9, 105, 218, 0.12)",
-    terminalBg: "#ffffff",
-    codeGreen: "#1a7f37",
-    catBody: "#e6edf3",
-    catDetail: "#57606a"
+    background: "#FFFFFF",
+    panelBg: "#F8FAFC",
+    borderColor: "rgba(15, 23, 42, 0.08)",
+    textPrimary: "#0F172A",
+    textMuted: "#475569",
+    gradStart: "#2563EB", // Azul
+    gradMid: "#06B6D4",   // Cyan
+    gradEnd: "#10B981",   // Esmeralda
+    glowColor: "rgba(37, 99, 235, 0.10)",
+    asciiGradientId: "lightAsciiGrad"
   }
 };
