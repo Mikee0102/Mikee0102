@@ -1,11 +1,12 @@
 <div align="center">
 
   <!-- BANNER DINÁMICO (Dark/Light Automático) -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./output/dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./output/light.svg">
-    <img alt="GitProfile Studio Banner" src="./output/dark.svg" width="100%">
-  </picture>
+<!-- BANNER DINÁMICO (Dark/Light Automático con bypass de caché) -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./output/dark.svg?v=2.0">
+  <source media="(prefers-color-scheme: light)" srcset="./output/light.svg?v=2.0">
+  <img alt="GitProfile Studio Banner" src="./output/dark.svg?v=2.0" width="100%">
+</picture>
 
   <br/><br/>
 
