@@ -1,22 +1,24 @@
 <div align="center">
 
-  <!-- BANNER DINÁMICO (Dark/Light Automático) -->
-<!-- BANNER DINÁMICO (Dark/Light Automático con bypass de caché) -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./output/dark.svg?v=2.0">
-  <source media="(prefers-color-scheme: light)" srcset="./output/light.svg?v=2.0">
-  <img alt="GitProfile Studio Banner" src="./output/dark.svg?v=2.0" width="100%">
-</picture>
+  <!-- HERO BANNER DINÁMICO (Vercel / Linear Style 1180x610) -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mikee0102/Mikee0102/main/output/dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mikee0102/Mikee0102/main/output/light.svg">
+    <img alt="GitProfile Studio Banner" src="https://raw.githubusercontent.com/Mikee0102/Mikee0102/main/output/dark.svg" width="100%">
+  </picture>
 
   <br/><br/>
 
-  <!-- BADGES RÁPIDOS -->
+  <!-- BADGES DE PERFIL -->
   <p align="center">
     <a href="https://github.com/Mikee0102">
-      <img src="https://img.shields.io/github/followers/Mikee0102?label=Followers&style=for-the-badge&color=58a6ff&logo=github" alt="Followers">
+      <img src="https://img.shields.io/github/followers/Mikee0102?label=Seguidores&style=for-the-badge&color=22D3EE&logo=github&logoColor=white" alt="Followers">
     </a>
     <a href="https://github.com/Mikee0102">
-      <img src="https://img.shields.io/github/stars/Mikee0102?label=Stars&style=for-the-badge&color=7ee787&logo=github" alt="Stars">
+      <img src="https://img.shields.io/github/stars/Mikee0102?label=Estrellas&style=for-the-badge&color=10B981&logo=github&logoColor=white" alt="Stars">
+    </a>
+    <a href="https://github.com/Mikee0102">
+      <img src="https://img.shields.io/badge/Estado-Compilando_sueños_🚀-7C3AED?style=for-the-badge" alt="Status">
     </a>
   </p>
 
@@ -24,16 +26,17 @@
 
 ---
 
-### 🚀 About Me
+### 👨‍💻 Sobre Mí
 
 ```bash
 ❯ whoami
-  Miguel Angel Conde Vazquez — Software Developer & Architecture Student
+  Miguel Angel Conde Vazquez — Software Developer
 
 ❯ cat stack.json
   {
-    "frontend": ["Svelte", "JavaScript", "Flutter"],
-    "backend":  ["Node.js", "Express.js", "Python"],
-    "database": ["PostgreSQL"],
-    "tools":    ["Git", "Docker", "Linux"]
+    "frontend":  ["Svelte", "JavaScript", "Flutter"],
+    "backend":   ["Node.js", "Express.js", "Python"],
+    "database":  ["PostgreSQL"],
+    "languages": ["Dart", "JavaScript", "Python"],
+    "tools":     ["Git", "GitHub Actions", "Linux"]
   }
