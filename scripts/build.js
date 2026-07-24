@@ -1,15 +1,11 @@
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
 import { profile } from "../config/profile.js";
 import { themes } from "../config/theme.js";
 import { createSvgDocument } from "./utils/svg.js";
 import { generateBannerLayout } from "./layouts/banner.js";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const rootDir = path.resolve(__dirname, "..");
-
+// Asegurar que existan las carpetas de salida
 const ensureDir = (dirPath) => {
   if (!fs.existsSync(dirPath)) {
     fs.mkdirSync(dirPath, { recursive: true });
@@ -17,19 +13,18 @@ const ensureDir = (dirPath) => {
 };
 
 const build = () => {
-  console.log("🚀 Restaurando GitProfile Studio v1.0 (Byte Sleeping 🐱)...");
+  console.log("🚀 Iniciando GitProfile Studio Build...");
 
-  const outputDir = path.join(rootDir, "output");
-  const assetsDir = path.join(rootDir, "assets", "banner");
-
-  ensureDir(outputDir);
-  ensureDir(assetsDir);
+  ensureDir("./output");
+  ensureDir("./assets/banner");
 
   ["dark", "light"].forEach((themeName) => {
     const theme = themes[themeName];
     
+    // Generamos el contenido del layout
     const { content, cssStyles } = generateBannerLayout(theme, profile);
 
+    // Creamos el documento SVG con el Easter Egg de Byte
     const svgContent = createSvgDocument({
       width: 850,
       height: 340,
@@ -38,13 +33,11 @@ const build = () => {
       easterEgg: profile.easterEgg
     });
 
-    const outputPath = path.join(outputDir, `${themeName}.svg`);
-    const assetsPath = path.join(assetsDir, `${themeName}.svg`);
+    // Guardamos las salidas
+    fs.writeFileSync(`./output/${themeName}.svg`, svgContent);
+    fs.writeFileSync(`./assets/banner/${themeName}.svg`, svgContent);
 
-    fs.writeFileSync(outputPath, svgContent, "utf-8");
-    fs.writeFileSync(assetsPath, svgContent, "utf-8");
-
-    console.log(`✅ Banner ${themeName.toUpperCase()} (850x340) restaurado.`);
+    console.log(`✅ Banner ${themeName.toUpperCase()} generado correctamente.`);
   });
 
   console.log("🎉 Build completado con éxito.");

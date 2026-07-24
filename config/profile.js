@@ -1,9 +1,9 @@
 export const profile = {
   name: "Miguel Angel Conde Vazquez",
   username: "Mikee0102",
-  role: "Software Developer &amp; Architecture Student",
+  role: "Software Developer &amp; Architecture Student", // 👈 Cambiado & por &amp;
   location: "Apizaco, Tlaxcala, México",
-  skills: ["Svelte", "JavaScript", "Node.js", "Express", "PostgreSQL", "Flutter", "Dart", "Python", "Git"],
+  skills: ["Svelte", "JavaScript", "Node.js", "Express", "PostgreSQL", "Flutter", "Python"],
   easterEgg: `<!--
 
 If you are reading this...
